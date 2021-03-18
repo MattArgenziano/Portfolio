@@ -423,6 +423,17 @@ img {
     width: 106px;
 }
 
+#github {
+    height: 106px;
+    width: 106px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+.social-media-label {
+    margin: 0;
+}
+
 .pdf-image {
     font-size: 4rem;
 }
