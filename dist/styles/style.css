@@ -1,0 +1,618 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #333;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, p {
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+h1 {
+    color: #d7d9ce;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+#work h1 {
+    text-align: center;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+}
+
+a img {
+    float: left;
+}
+
+img {
+    height: 26px;
+    width: 30px;
+}
+
+.portfolio-section {
+    margin-bottom: 0;
+}
+
+.link-button {
+    background-color: #4caf50;
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+}
+
+.link-button:hover {
+    background-color: #357237;
+}
+
+.card {
+    display: grid;
+    width: 300px;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: #d7d9ce;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.card-image {
+    grid-area: image;
+}
+
+.card-text {
+    grid-area: text;
+}
+.card-stats {
+    grid-area: stats;
+    justify-content: center;
+}
+
+#img1 {
+    grid-area: image;
+    background-image: url("../imgs/aim_game.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+#img2 {
+    grid-area: image;
+    background-image: url("../imgs/survey_form.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+#img3 {
+    grid-area: image;
+    background-image: url("../imgs/landing_page.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+#img4 {
+    grid-area: image;
+    background-image: url("../imgs/frasiermedia.PNG");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+#img5 {
+    grid-area: image;
+    background-image: url("../imgs/tasklist.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: left;
+}
+
+#img6 {
+    grid-area: image;
+    background-image: url("");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.card-text {
+    grid-area: text;
+    margin: 20px;
+}
+.card-text .date {
+    color: #333;
+    font-size:13px;
+}
+.card-text p {
+    color: #333;
+    font-size:15px;
+    font-weight: 500;
+}
+.card-text h2 {
+    margin-top:0px;
+    font-size:28px;
+}
+
+.card-stats {
+    color:  #d7d9ce;
+    grid-area: stats; 
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #333;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+    transition: 0.5s ease;
+    margin: 30px;
+}
+
+.portfolio-card p {
+    padding: 0 0 22px 0;
+}
+
+.portfolio-card h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.portfolio-card a {
+    margin-top: 20px;
+}
+
+#billboard-button {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 800;
+    border: 2px solid #d7d9ce;
+    border-radius: 10px;
+    background-color: #d7d9ce;
+    color: #333;
+    cursor: pointer;
+    margin: 0;
+    transition: 0.3s;
+}
+
+#billboard-button:hover {
+    color: #d7d9ce;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#billboard-container {
+    margin: 20vh auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: auto auto;
+    text-align: left;
+    justify-content: center;
+}
+
+#billboard-container a {
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    width: 153px;
+}
+
+#billboard-container p {
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+
+#billboard-image {
+    margin: 100px auto;
+    height: 400px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid #d7d9ce;
+}
+
+#skills {
+    background-color: #d7d9ce;
+    color: #333;
+    margin-bottom: 0;
+}
+
+#skills h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.image-box {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.nav {
+    background-color: #d7d9ce;
+    overflow: hidden;
+}
+
+.nav a {
+    float: right;
+    display: block;
+    justify-content: space-between;
+    color: #040404;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 2rem;
+    height: 100%;
+    transition: background-color 200ms;
+}
+
+.nav a:hover {
+    background-color:#333;
+    color: white;
+    height: 100%;
+}
+
+
+.nav a:first-of-type {
+    font-family: 'Poppins', cursive;
+    font-size: 17px;
+    margin-left: 0;
+    float: left;
+}
+
+.nav a.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+.nav .icon {
+    display: none;
+}
+
+#skill-header {
+    text-align: center;
+}
+
+.section .skill {
+    display: grid;
+    grid-gap: 16px;
+    padding: 16px;
+}
+
+.skill .set {
+    background-color: #d7d9ce;
+    padding: 0 24px 24px 24px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.set span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 35%;
+}
+
+.set > h3 {
+    padding-block: 24px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.set .list {
+    padding-block: 15px;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+}
+
+.about-me img {
+    border-radius: 50%;
+    object-position: top;
+    height: 200px;
+    width: 275px;
+}
+
+.about-me h1 {
+    margin-bottom: 20px;
+}
+
+.about-me p, h3 {
+    font-weight: 400;
+    color: #d7d9ce;
+}
+
+.about-me p {
+    padding-bottom: 20px;
+}
+
+.about-me h3 {
+    font-size: 2rem;
+}
+
+.about-me a img {
+    margin: 20px 20px;
+    transition: all 0.4s ease 0s;
+}
+
+.about-me a img:hover {
+    opacity: 0.6;
+}
+
+#linkedin {
+    border-radius: 0%;
+    height: 106px;
+    width: 106px;
+}
+
+.pdf-image {
+    font-size: 4rem;
+}
+
+.pdf-card a {
+    color: #d1241b;
+    transition: all 0.4s ease 0s;
+}
+
+.pdf-card a:hover {
+    opacity: 0.8;
+}
+
+.pdf-card a:visited {
+    color: #d1241b;
+}
+
+.about-me form {
+    color: white;
+    margin-top: 50px;
+}
+
+.about-me form input {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+.about-me form input::placeholder, textarea::placeholder {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+.about-me form label {
+    letter-spacing: 1px;
+}
+
+#message {
+    border-radius: 10px;
+    padding: 5px;
+    font-family: inherit;
+    letter-spacing: 1px;
+    width: 500px;
+}
+
+#message:focus, input:focus {
+    /* outline: 2px solid #44CFCB; */
+    border: 2px solid #44CFCB;
+    box-shadow: rgba(68, 207, 203, 1);    
+}
+
+.about-me button {
+    font-family: inherit;
+    font-size: 1.7rem;
+    font-weight: 400;
+    border: 2px solid #d7d9ce;
+    border-radius: 10px;
+    background-color: #d7d9ce;
+    color: #333;
+    cursor: pointer;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.about-me button:hover {
+    color: #d7d9ce;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* FOR TEXT ANIMATION */
+.fade-in {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+    .nav a:not(:first-child) {
+        display: none;
+    }
+
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .nav.responsive {
+        position: relative;
+    }
+
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 54px;
+    }
+
+    .nav.nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .skill {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #billboard-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .about-me {
+        margin: auto;
+        width: auto;
+        text-align: center;
+    }
+
+    .about-me p {
+        padding: 20px;
+    }
+
+    .about-me #message, #name, #email {
+        width: 300px;
+    }
+}
