@@ -38,7 +38,6 @@ h1 {
 
 p {
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 10%;
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.5rem;
 }
@@ -59,12 +58,12 @@ img {
 .link-button {
     background-color: #4caf50;
     color: black;
-    font-weight: 800;
+    font-weight: 400;
     text-decoration: none;
     padding: 10px;
-    margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.9);
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 .link-button:hover {
@@ -141,13 +140,12 @@ img {
 
 #img6 {
     grid-area: image;
-    background-image: url("");
+    background-image: url("../imgs/gpus.png");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
     background-position: center;
 }
-
 
 
 .card-text {
@@ -164,8 +162,8 @@ img {
     font-weight: 500;
 }
 .card-text h2 {
-    margin-top:0px;
-    font-size:28px;
+    margin-top: 0;
+    font-size: 28px;
 }
 
 .card-stats {
@@ -185,7 +183,7 @@ img {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 .card {
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     margin: 30px;
 }
 
@@ -196,10 +194,6 @@ img {
 .portfolio-card h2 {
     font-size: 20px;
     margin: 0;
-}
-
-.portfolio-card a {
-    margin-top: 20px;
 }
 
 #billboard-button {
