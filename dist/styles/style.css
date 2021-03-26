@@ -113,7 +113,7 @@ img {
 
 #img3 {
     grid-area: image;
-    background-image: url("../imgs/landing_page.png");
+    background-image: url("https://res.cloudinary.com/frasiermedia-com/image/upload/v1616778861/landing_page_hayevl.png");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
@@ -122,7 +122,7 @@ img {
 
 #img4 {
     grid-area: image;
-    background-image: url("../imgs/frasiermedia.PNG");
+    background-image: url("https://res.cloudinary.com/frasiermedia-com/image/upload/v1616778860/frasiermedia_lstbl1.png");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
@@ -141,6 +141,15 @@ img {
 #img6 {
     grid-area: image;
     background-image: url("../imgs/gpus.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+#img7 {
+    grid-area: image;
+    background-image: url("https://res.cloudinary.com/frasiermedia-com/image/upload/v1616778859/e-commerce_ouqpue.png");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
