@@ -191,6 +191,7 @@ img {
 .card:hover {
     box-shadow: 10px 10px 15px 15px rgba(0,0,0,0.9);
 }
+
 .card {
     transition: 0.3s ease;
     margin: 30px;
@@ -205,22 +206,38 @@ img {
     margin: 0;
 }
 
+#billboard {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    clip-path: polygon(
+    0 18%, /* left top */
+    100% 0, /* right top */ 
+    100% 100%, /* right bottom */
+    0 85% /* left bottom */
+  );
+  background-color: #d7d9ce;
+}
+
+#billboard h1, #billboard p {
+    color: black;
+}
+
 #billboard-button {
     font-family: inherit;
     font-size: 2rem;
     font-weight: 800;
-    border: 2px solid #d7d9ce;
+    border: 2px solid #333;
     border-radius: 10px;
-    background-color: #d7d9ce;
-    color: #333;
+    background-color: #333;
+    color: white;
     cursor: pointer;
     margin: 0;
     transition: 0.3s;
 }
 
 #billboard-button:hover {
-    color: #d7d9ce;
-    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 #billboard-container {
@@ -337,6 +354,17 @@ img {
 
 #skill-header {
     text-align: center;
+}
+
+#skills {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    clip-path: polygon(
+        0 13%, /* left top */
+        100% 0, /* right top */ 
+        100% 100%, /* right bottom */
+        0 85% /* left bottom */
+    );
 }
 
 .section .skill {
