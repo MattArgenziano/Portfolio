@@ -159,7 +159,7 @@ img {
 
 #img8 {
     grid-area: image;
-    background-image: url("/dist/imgs/f1Results.PNG");
+    background-image: url("../imgs/f1Results.PNG");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
