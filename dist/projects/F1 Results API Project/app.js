@@ -8,7 +8,7 @@ function getResults(e){
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', `http://ergast.com/api/f1/${year}/${round}/results.json`, true);
+    xhr.open('GET', `https://ergast.com/api/f1/${year}/${round}/results.json`, true);
 
     xhr.onload = function(){
         if(this.status === 200) {
@@ -49,7 +49,7 @@ function getRandom(e) {
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', `http://ergast.com/api/f1/${year}/${round}/results.json`, true);
+    xhr.open('GET', `https://ergast.com/api/f1/${year}/${round}/results.json`, true);
 
     xhr.onload = function(){
         if(this.status === 200) {
