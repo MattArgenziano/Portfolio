@@ -157,6 +157,15 @@ img {
     background-position: center;
 }
 
+#img8 {
+    grid-area: image;
+    background-image: url("/dist/imgs/f1Results.PNG");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
 
 .card-text {
     grid-area: text;
