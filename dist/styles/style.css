@@ -472,6 +472,7 @@ img {
 
 .social-media-label {
     margin: 0;
+    flex-direction: row;
 }
 
 .pdf-image {
