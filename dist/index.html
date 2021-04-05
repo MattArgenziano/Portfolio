@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Matt Argenziano - Portfolio</title>
 </head>
 <body>
@@ -29,14 +30,14 @@
                 <div id="intro">
                     <h1 id="billboard-h1" class="fade-in">Hello, I'm Matt Argenziano</h1>
                     <p class="fade-in">I am a <span style="color: orangered;">web developer</span> from Pennsylvania. I'm passionate about creating modern, stunning web pages.</p>
-                    <a id="billboard-button" href="#work">See My Work</a>
+                    <a id="billboard-button" class="fade-in" href="#work">See My Work</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!--Work Section-->
-    <section class="portfolio-section" id="work">
+    <section class="portfolio-section" id="work" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
       <h1>Projects</h1>
         <div class="container work">
           <div class="card" href="https://www.frasiermedia.com/">
@@ -207,7 +208,7 @@
     </section>
     
     <!--Skills Section-->
-    <section class="portfolio-section" id="skills">
+    <section class="portfolio-section" id="skills" data-aos="fade-up" data-aos-duration="1000">
       <h1 id="skill-header">Skills</h1>
       <div class="skill">
         <div class="set">
@@ -277,5 +278,12 @@
   <button onclick="backToTop()" class="back-to-top"><i class="fas fa-arrow-up"><br></i></button>
 
   <script src="/dist/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400
+    });
+    
+  </script>
 </body>
 </html>
