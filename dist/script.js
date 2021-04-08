@@ -28,4 +28,4 @@ function myFunction() {
     } else {
       x.className = "nav";
     }
-  }
+}
