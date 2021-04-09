@@ -56,23 +56,25 @@ img {
 }
 
 .link-button {
-    background-color: #4caf50;
-    color: black;
+    background-color: transparent;
+    color: orangered;
     font-weight: 400;
     text-decoration: none;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.9);
+    border: 1px solid orangered;
     border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .link-button:hover {
-    background-color: #357237;
+    color: #333;
+    background-color: orangered;
 }
 
 .github {
     background-color: #333;
     color: white;
+    border: 1px solid #333;
 }
 
 .github:hover {
@@ -245,11 +247,11 @@ img {
 #billboard-button {
     font-family: inherit;
     font-size: 2rem;
-    font-weight: 800;
-    border: 2px solid #333;
+    font-weight: 400;
+    border: 2px solid orangered;
     border-radius: 10px;
-    background-color: #333;
-    color: #d7d9ce;
+    background-color: transparent;
+    color: orangered;
     cursor: pointer;
     margin: 0;
     transition: 0.3s;
@@ -257,7 +259,7 @@ img {
 
 #billboard-button:hover {
     color: #333;
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: orangered;
 }
 
 #billboard-container {
