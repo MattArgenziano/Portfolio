@@ -92,6 +92,7 @@ img {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     overflow: hidden;
+    border: 3px solid transparent;
 }
 
 .card-image {
@@ -208,11 +209,11 @@ img {
 }
 
 .card:hover {
-    box-shadow: 10px 10px 15px 15px rgba(0,0,0,0.9);
+    border: 3px solid orangered;
 }
 
 .card {
-    transition: 0.3s ease;
+    transition: 0.2s ease;
     margin: 30px;
 }
 
