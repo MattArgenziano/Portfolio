@@ -67,7 +67,7 @@ img {
 }
 
 .link-button:hover {
-    color: #333;
+    color: white;;
     background-color: orangered;
 }
 
@@ -258,7 +258,7 @@ img {
 }
 
 #billboard-button:hover {
-    color: #333;
+    color: white;
     background-color: orangered;
 }
 
